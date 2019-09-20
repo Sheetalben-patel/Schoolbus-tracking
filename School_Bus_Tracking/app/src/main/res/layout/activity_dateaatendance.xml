@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context="com.example.admin.school_bus_tracking.Dateaatendance">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fetch Date Wise Attedance"
+        android:textColor="#409BC7"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+   <LinearLayout
+       android:layout_width="350dp"
+       android:layout_height="200dp"
+       android:layout_gravity="center"
+       android:background="@drawable/editback"
+       android:layout_marginTop="30dp"
+
+       android:orientation="vertical"
+       >
+
+
+
+       <EditText
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+
+           android:hint="Select Date "
+           android:textColorHint="#fff"
+           android:inputType="none"
+           android:id="@+id/dob"
+           android:layout_gravity="center"
+           android:layout_marginTop="10dp"
+
+           />
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/St_enter"
+           android:background="#409BC7"
+           android:text="Fetch"
+           android:textColor="#fff"
+           android:textSize="20sp"
+           android:layout_gravity="center"
+           android:layout_marginTop="20dp"/>
+
+   </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/editback"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#409BC7"
+            android:layout_gravity="center"
+            android:id="@+id/Show_attendence"
+            android:textSize="15sp"
+            />
+
+
+        </LinearLayout>
+
+
+</LinearLayout>
+
+

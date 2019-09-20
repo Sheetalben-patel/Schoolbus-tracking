@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context="com.example.admin.school_bus_tracking.Findlocation">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Driver Mobile To Fetch Bus Location"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="#fff"
+        android:id="@+id/En_mobile"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:hint="Enter Driver Mobile No"
+        android:inputType="number"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="#409BC7"
+        android:text="Fetch Location"
+        android:textColor="#fff"
+        android:id="@+id/ft_button"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/ft_addr"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:textColor="#409BC7"
+        android:textStyle="bold"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

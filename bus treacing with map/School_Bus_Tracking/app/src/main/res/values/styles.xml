@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="yourStyle_Drawer" >
+        <item name="android:textSize">16sp</item>
+
+
+    </style>
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="MyAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+    <style name="Myterms" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="color">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="MyAppLolTheme" parent="MyMaterialTheme.Base">
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
+
+    </style>
+    <style name="AppCompatTheme" parent="@style/Theme.AppCompat.Light">
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="CustomActionBarTheme" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">#00000000</item>
+    </style>
+
+
+
+
+    <style name="MyAppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="MyAppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="MyDrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">#F5F5F5</item>
+        <item name="spinBars">true</item>
+    </style>
+
+
+    <style name="tabtextcolor" parent="@android:style/Widget.Holo.Light.ActionBar.TabText">
+        <item name="android:textColor">@android:color/holo_orange_light</item>
+    </style>
+
+
+    <style name="spinner_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:popupBackground">#FFFFFF</item>
+    </style>
+
+
+
+
+</resources>

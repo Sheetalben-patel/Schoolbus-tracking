@@ -1,0 +1,215 @@
+
+
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/header_cover_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:scaleType="centerCrop"
+                    android:background="#FFDEAD"/>
+
+                <ImageButton
+                    android:id="@+id/user_profile_photo"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_below="@+id/header_cover_image"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-40dp"
+                    android:background="@drawable/profile"
+                    android:elevation="5dp"
+                    android:padding="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile" />
+
+                <RelativeLayout
+                    android:id="@+id/profile_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/header_cover_image"
+                    android:background="#FFDEAD"
+                    android:elevation="4dp"
+                    android:paddingBottom="24dp">
+
+
+                    <TextView
+                        android:id="@+id/user_profile_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="40dp"
+                        android:text="Parent Section"
+                        android:textColor="#fff"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/logout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/user_profile_name"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:text="Log Out"
+                        android:textColor="#fff"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:background="#409BC7"/>
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profile_layout"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:id="@+id/studentemail"
+                        android:background="#fff"
+                        android:clickable="true"
+                        android:elevation="4dp"
+                        android:padding="10dp"
+                        android:text="Email Address"
+                        android:textColor="#FF4081"/>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profile_layout"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="120dp"
+                    android:id="@+id/assgn_layout"
+                    >
+                    <ImageButton
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/prsnt"
+                        android:id="@+id/St_attendance"
+                        android:background="#2582C5"
+
+                        android:layout_marginLeft="70dp"/>
+                    <ImageButton
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/announment"
+                        android:background="#2582C5"
+                        android:id="@+id/St_announment"
+
+                        android:layout_marginLeft="70dp"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/assgn_layout"
+                    android:orientation="horizontal"
+                    android:id="@+id/TextAssgn"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Attendance"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:layout_marginLeft="70dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Announcement"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:layout_marginLeft="40dp"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/TextAssgn"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/track_layout"
+                    >
+                    <ImageButton
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/track_bus"
+                        android:id="@+id/St_Track"
+                        android:background="#2582C5"
+
+                        android:layout_marginLeft="70dp"/>
+                    <ImageButton
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/announment"
+                        android:background="#2582C5"
+                        android:id="@+id/St_anno"
+
+                        android:layout_marginLeft="70dp"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/track_layout"
+                    android:orientation="horizontal"
+                    android:id="@+id/TextAssgn1"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Track Location"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:layout_marginLeft="50dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="feedback"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:layout_marginLeft="40dp"/>
+                </LinearLayout>
+
+
+
+
+
+                .
+            </RelativeLayout>
+        </ScrollView>
+
+
+
+
+
+
+
+

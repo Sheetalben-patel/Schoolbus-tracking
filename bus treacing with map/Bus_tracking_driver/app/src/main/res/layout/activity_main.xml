@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#FE642E"
+    android:orientation="vertical"
+    tools:context="com.example.admin.bus_tracking_driver.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Enter Your Information Belowed"
+        android:textSize="20sp"
+        android:textColor="#fff"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="#fff"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:id="@+id/Phone"
+        android:hint="Enter Your Phone Number"
+        android:inputType="number"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="#fff"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:id="@+id/Busno"
+        android:hint="Enter Your Bus Number"
+        android:inputType="number"/>
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/B_submit"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:text="Submit"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>
